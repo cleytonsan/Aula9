@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgba(191, 105, 0, 0.79);
+            color: black;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javaScript</p>
+    <div class="msg">clique em mim</div>
+
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        /*
+        var d = document.getElementById('msg')
+        d.style.background = 'blue'
+        d.innerText = 'Estou aguardando...'
+        */
+
+        // var d = document.getElementsByName('msg')[0]
+        // d.innerText = 'SALVeeeeeeeeeeeee'
+
+        // var d = document.querySelector('div.msg')
+        // d.style.color = 'black'
+
+        var res = document.getElementsByClassName('msg')[0]
+        res.innerText = 'Cleyton santos da silva'
+        res.style.color = 'green'
+
+
+    </script>
+</body>
+</html>
